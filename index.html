@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt‑BR">
+<head>
+  <meta charset="UTF‑8">
+  <meta name="viewport" content="width=device‑width,initial‑scale=1">
+  <title>SAYTRON — Plataforma Completa</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    * {box-sizing:border-box}
+    body {font-family:Arial,sans‑serif;background:#0f172a;color:#f1f5f9;margin:0;padding:.8rem}
+    .cx {background:#1e293b;border:1px solid #334155;border‑radius:.5rem;padding:.8rem;margin‑bottom:.8rem}
+    .btn {background:#0284c7;border:0;border‑radius:.3rem;color:#fff;padding:.5rem 1rem}
+    .btn:hover {background:#0369a1}
+  </style>
+</head>
+<body class="max‑xl mx‑auto">
+  <header class="text‑center font‑bold text‑xl mb‑3 text‑sky‑400">SAYTRON</header>
+
+  <textarea id="ent" class="cx w‑full min‑h‑20" placeholder="Digite o que precisa…"></textarea>
+  <div class="flex gap‑2 flex‑wrap">
+    <button class="btn" onclick="rodar()">Processar</button>
+    <button class="btn" onclick="falar()">Ouvir</button>
+    <button class="btn" onclick="imprimir()">Imprimir</button>
+  </div>
+  <div id="sai" class="cx min‑h‑24"></div>
+
+  <script src="nucleo.ia.js"></script>
+  <script src="voz.impressao.js"></script>
+  <script src="planos.pagto.js"></script>
+  <script src="base.dados.js"></script>
+  <script src="extra.complementos.js"></script>
+</body>
+</html>
